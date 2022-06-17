@@ -88,3 +88,9 @@ async def skip(_, message: Message):
                         callsmusic.queues.get(chat_id)["file"],
 
                     ),
+),
+
+            )
+
+    await message.reply_text("➡️ 𝐒𝐤𝐢𝐩 💫 𝐓𝐡𝐞 𝐂𝐮𝐫𝐫𝐞𝐧𝐭 ✨ 𝐒𝐨𝐧𝐠 🥀")
+
