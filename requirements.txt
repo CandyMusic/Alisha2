@@ -1,0 +1,16 @@
+yt-dlp==2021.12.01
+pyrogram==1.4.16
+TgCrypto
+py-tgcalls
+python-dotenv
+youtube-search-python==1.4.9
+requests
+aiohttp
+aiofiles
+asyncio
+youtube-search
+search_engine_parser
+ffmpeg-python
+ffmpeg
+Pillow
+ujson
