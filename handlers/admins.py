@@ -19,7 +19,7 @@ ACTV_CALLS = []
 async def pause(_, message: Message):
     await message.delete()
     await callsmusic.pytgcalls.pause_stream(message.chat.id)
-    await message.reply_text("▶️ Pᴀᴜsᴇ ʙʏ{} 😔".format( message.from_user.mention ), )
+    await message.reply_text("▶️ Pᴀᴜsᴇ By{} 😔".format( message.from_user.mention ), )
 
 
 @Client.on_message(command(["resume", "chalja"]) & other_filters)
@@ -28,7 +28,7 @@ async def pause(_, message: Message):
 async def resume(_, message: Message):
     await message.delete()
     await callsmusic.pytgcalls.resume_stream(message.chat.id)
-    await message.reply_text("⏸ Rᴇsᴜᴍᴇ ʙʏ {}❤️".format( message.from_user.mention ), )
+    await message.reply_text("⏸ Rᴇsᴜᴍᴇ By {}❤️".format( message.from_user.mention ), )
 
 
 @Client.on_message(command(["end", "stop", "band"]) & other_filters)
@@ -42,7 +42,7 @@ async def stop(_, message: Message):
 
     await message.delete()
     await callsmusic.pytgcalls.leave_group_call(message.chat.id)
-    await message.reply_text("❌ Sᴛᴏᴘ 🛑 Sᴛʀᴇᴀᴍɪɴɢ Bʏ {} 🥺".format(
+    await message.reply_text("❌ Sᴛᴏᴘ 🛑 Sᴛʀᴇᴀᴍɪɴɢ By {} 🥺".format(
       message.from_user.mention ), )
 
 @Client.on_message(command(["skip", "next", "aage"]) & other_filters)
@@ -70,4 +70,4 @@ async def skip(_, message: Message):
                     
                 ),
             )
-    await message.reply_text("➡️ Sᴋɪᴘ 💫 Tʜᴇ Cᴜʀʀᴇɴᴛ ✨ Sᴏɴɢ ʙʏ {}🥀🤔".format( message.from_user.mention ), )
+    await message.reply_text("➡️ Sᴋɪᴘ 💫 Tʜᴇ Cᴜʀʀᴇɴᴛ ✨ Sᴏɴɢ By {}🥀🤔".format( message.from_user.mention ), )
