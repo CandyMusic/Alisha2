@@ -44,31 +44,47 @@ async def stop(_, message: Message):
     await callsmusic.pytgcalls.leave_group_call(message.chat.id)
     await message.reply_text("❌ Sᴛᴏᴘ 🛑 Sᴛʀᴇᴀᴍɪɴɢ By {} 🥺".format(
       message.from_user.mention ), )
+      message.from_user.mention ), )
+@Client.on_message(command(["skip"]@Client.on_message(command(["skip"])) & other_filters)
 
-@Client.on_message(command(["skip", "next", "aage"]) & other_filters)
 @errors
+
 @authorized_users_only
+
 async def skip(_, message: Message):
-    await message.delete()
+
     global que
+
     chat_id = message.chat.id
+
     for x in callsmusic.pytgcalls.active_calls:
+
         ACTV_CALLS.append(int(x.chat_id))
+
     if int(chat_id) not in ACTV_CALLS:
-        await message.reply_text("❗ Nᴏᴛʜɪɴɢ 😔  Is Pʟᴀʏɪɴɢ 🎶 Tᴏ 🥀")
+
+        await message.reply_text("❗ 𝐍𝐨𝐭𝐡𝐢𝐧𝐠 😔  𝐈𝐬 𝐏𝐥𝐚𝐲𝐢𝐧𝐠 🎶 𝐓𝐨 𝐒𝐤𝐢𝐩 🥀")
+
     else:
+
         queues.task_done(chat_id)
+
         
+
         if queues.is_empty(chat_id):
+
             await callsmusic.pytgcalls.leave_group_call(chat_id)
+
         else:
+
             await callsmusic.pytgcalls.change_stream(
+
                 chat_id, 
+
                 InputStream(
+
                     InputAudioStream(
+
                         callsmusic.queues.get(chat_id)["file"],
-                    
-                ),
-            ).
-       ) 
-    await message.reply_text("➡️ Sᴋɪᴘ 💫 Tʜᴇ Cᴜʀʀᴇɴᴛ ✨ Sᴏɴɢ 🥀")
+
+                    ),
