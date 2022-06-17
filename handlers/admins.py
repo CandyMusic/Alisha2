@@ -69,5 +69,6 @@ async def skip(_, message: Message):
                         callsmusic.queues.get(chat_id)["file"],
                     
                 ),
-            )
+            ).
+       ) 
     await message.reply_text("➡️ Sᴋɪᴘ 💫 Tʜᴇ Cᴜʀʀᴇɴᴛ ✨ Sᴏɴɢ 🥀")
