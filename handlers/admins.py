@@ -70,4 +70,4 @@ async def skip(_, message: Message):
                     
                 ),
             )
-    await message.reply_text("➡️ Sᴋɪᴘ 💫 Tʜᴇ Cᴜʀʀᴇɴᴛ ✨ Sᴏɴɢ By {}🥀🤔".format( message.from_user.mention ), )
+    await message.reply_text("➡️ Sᴋɪᴘ 💫 Tʜᴇ Cᴜʀʀᴇɴᴛ ✨ Sᴏɴɢ 🥀")
