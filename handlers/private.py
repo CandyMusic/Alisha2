@@ -14,10 +14,10 @@ from config import (
 async def start_(client: Client, message: Message):
      await message.reply_photo(
         photo=f"https://telegra.ph//file/7ee458e4a36161a036392.jpg",
-        caption=f"""**Hᴇʏ ʙᴀʙʏ,ɪ'ᴍ ǫᴜᴇᴇɴ ᴀʟɪsʜᴀ\n🥀ᴀ ᴘᴏᴡᴇʀғᴜʟ ᴍᴜsɪᴄ 🎶 ʙᴏᴛ ʙᴀsᴇᴅ\n 🥀 ᴏɴ 💫ᴘʏᴛʜᴏɴ 🌎 ғᴇᴇʟ ❤️ ɴᴏ ʟᴀɢ ғᴀsᴛ 🎧 ᴍᴜsɪᴄ.\n 𝐃𝐞𝐯𝐞𝐥𝐨𝐩𝐞𝐝 𝐁𝐲 = [Aʙʜɪᴍᴀɴʏᴜ Sɪɴɢʜ Rᴀɴᴀᴡᴀᴛ](https://t.me/tera_baap_katil)
+        caption=f"""**Hᴇʏ ʙᴀʙʏ,ɪ'ᴍ ǫᴜᴇᴇɴ ᴀʟɪsʜᴀ\n🥀ᴀ ᴘᴏᴡᴇʀғᴜʟ ᴍᴜsɪᴄ 🎶 ʙᴏᴛ ʙᴀsᴇᴅ\n 🥀 ᴏɴ 💫ᴘʏᴛʜᴏɴ 🌎 ғᴇᴇʟ ❤️ ɴᴏ ʟᴀɢ  \n ғᴀsᴛ 🎧 ᴍᴜsɪᴄ.    \n 🥀𝐃𝐞𝐯𝐞𝐥𝐨𝐩𝐞𝐝 𝐁𝐲 = [Aʙʜɪᴍᴀɴʏᴜ Sɪɴɢʜ Rᴀɴᴀᴡᴀᴛ](https://t.me/Venom_Hai_Hum)
         
         
-Fᴏʀ ᴀɴʏ ʜᴇʟᴘ ᴅᴍ ᴍʏ ᴏᴡɴᴇʀ = [Aʙʜɪᴍᴀɴʏᴜ Sɪɴɢʜ Rᴀɴᴀᴡᴀᴛ](https://t.me/VeNom_Hai_HuM)**""",
+Fᴏʀ ᴀɴʏ ʜᴇʟᴘ ᴅᴍ ᴍʏ ᴏᴡɴᴇʀ   🥀[Aʙʜɪᴍᴀɴʏᴜ Sɪɴɢʜ Rᴀɴᴀᴡᴀᴛ](https://t.me/VeNom_Hai_HuM)**""",
         reply_markup=InlineKeyboardMarkup(
             [
                 [
